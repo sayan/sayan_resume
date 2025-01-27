@@ -1,0 +1,214 @@
+%%%%%%%%%%%%%%%%%
+% This is a two-column CV template based on moderncv.cls
+%%%%%%%%%%%%%%%%
+
+% environment
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{banking}
+\nopagenumbers{}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.95]{geometry}
+\usepackage{tabularx}
+\usepackage{mathpazo}
+% \usepackage{hyperref}
+\usepackage{xcolor}
+
+% \usepackage[hyphens]{url}
+% \usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+
+% macro
+\renewcommand*{\labelitemi}{-}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+\newcommand*{\experienceentry}[5][1mm]{
+    \subsection{#2} \vspace{-1.5mm}
+    \small{
+    \begin{tabularx}{\textwidth}{LR}
+        {\itshape #3} & {\itshape #4, #5}
+    \end{tabularx}
+    }
+    \par\addvspace{#1}
+}
+
+\newcommand*{\sayaneducationentry}[4][1mm]{ % Four arguments: optional spacing, date, degree, institute
+    \par\addvspace{#1} % Add vertical spacing
+    \begin{tabularx}{\textwidth}{@{}p{1mm}X@{}} % Define a 2-column table with fixed width for the first column
+        & {\textsc{#2}} \\ % First row: Date (small caps), first column left empty
+        & {\bfseries #3} \\ % Second row: Degree (bold)
+        & {\itshape #4} \\ % Third row: Institute (italic)
+    \end{tabularx}
+}
+
+\newcommand*{\invitedtalk}[4][1mm]{ % Four arguments: optional spacing, year, conference, description
+    \par\addvspace{#1} % Add vertical spacing
+    {\bfseries #2} \\ % First row: Year in bold
+    {\bfseries #3} \\ % Second row: Conference name in bold
+    \noindent{\itshape #4} % Third row: Description in italics
+}
+
+\newcommand*{\educationentry}[4][0.5mm]{
+    \begin{tabularx}{\textwidth}{LR}
+        {\bfseries #3} & {\bfseries #4} \\
+    \end{tabularx}
+    {\itshape #2}
+    \par\addvspace{#1}
+}
+
+\newcommand{\achievement}[1]{%
+    \item #1
+}
+
+\newenvironment{yearlist}{%
+    \renewcommand\item[4][]{%
+    \textsc{##2} & \textbf{##3} \\
+    \ifstrempty{##1}{}{& \textsc{##1} \\}
+    & \textit{##4}\medskip\\}
+    \tabularx{\linewidth}{rX}}
+    {\endtabularx}
+
+\newcommand*{\scoreentry}[3][2.5mm]{
+    {\bfseries #2} \\
+    {\itshape #3}
+    \par\addvspace{#1}
+}
+% \renewcommand*{\namefont}{\fontsize{14}{18}\selectfont}
+% \renewcommand*{\titlefont}{\fontsize{10}{12}\selectfont}
+
+% preamble
+\firstname{Sayan}
+\familyname{Dasgupta}
+% \address{Bengaluru, India}{}
+\mobile{(+91)9591374000}
+\email{dasgupta.sayan@gmail.com}
+\social[linkedin]{sayandasgupta}
+% \social[github]{github}
+
+% document
+\begin{document}
+\maketitle
+\vspace{-10.0mm}
+
+% left column
+\begin{minipage}[t]{0.64\textwidth}
+\section{EXPERIENCE}
+
+\experienceentry{Netscaler}{Principal Data Scientist}{Dec 2020 -- Present}{BLR, India}
+\vspace{-5mm}
+\begin{small}
+\begin{itemize}
+    \item Architected and developed \textbf{\textit{Netscaler Copilot}}, a RAG-based AI platform enabling question-answering across Netscaler products, reducing time-to-resolution (TTR) for customers by 20\%.
+    \item Designed and implemented guardrails to protect the system from adversarial attacks.
+    \item Created evaluation metrics (BERT Score and BLEU Score) to measure the AI model’s performance.
+    \item Developed models to identify volumetric and sophisticated \textbf{ATO attacks}, leveraging statistical and machine learning techniques.
+    \item Built sentiment analysis models to analyze customer feedback and identify key areas for improvement.
+    \item Developed the \textbf{\textit{Netscaler Voice of Customer (VoC) Dashboard}} to visualize insights and track progress on improvements.
+\end{itemize}
+\end{small}
+
+\vspace{0.25mm}
+
+\experienceentry{Reliance JIO Embibe}{Principal Data Scientist}{Apr 2019 -- Mar 2020}{BLR, India}
+\vspace{-5mm}
+\begin{itemize}
+    \item Led a 10-member data science team to develop an AI-based learning platform.
+    \item Built a learning journey recommendation system, increasing user engagement from 16 minutes to 23 minutes (\textbf{43\%}) and improving learning outcomes by 20\%.
+    \item Developed and deployed \textbf{\textit{Bayesian Knowledge Tracing (BKT)}} models to measure student mastery of various concepts.
+    \item Built \textbf{2PL IRT} models to understand question difficulty and discrimination for test design.
+    \item Conducted A/B testing to validate the impact of the models on the platform.
+\end{itemize}
+\vspace{0.25mm}
+
+\experienceentry{Careem}{MTS in Data Science}{Apr 2018 -- Mar 2019}{Dubai, UAE}
+\vspace{-5mm}
+\begin{itemize}
+    \item Developed Careem’s ML-based driver fraud detection system, significantly increasing cost savings.
+    \item Created statistical and ML models to identify phantom trips.
+    \item Built a system to augment automated trip-flagging with manual review by local teams, enabling timely intervention.
+\end{itemize}
+\vspace{0.5mm}
+
+\experienceentry{C1X Inc}{Senior Manager of Data Science}{Oct 2016 -- Sept 2017}{BLR, India}
+\vspace{-5mm}
+\begin{itemize}
+    \item Implemented real-time bidding (RTB) enrichment via extensive A/B testing on ad impression bid prices.
+    \item Architected a data science and analytics platform using AWS, EMR (ETL), MySQL, and Apache Superset (BI). Reduced time to insights from multiple days to under one hour.
+\end{itemize}
+\vspace{0.5mm}
+
+\experienceentry{LinkedIn}{Senior Data Scientist}{May 2013 -- Sept 2016}{BLR, India}
+\vspace{-5mm}
+\begin{itemize}
+    \item Designed and implemented machine learning models to detect fake accounts, preventing fraud and spam. Reduced touch back rate to \textbf{1\%}.
+    \item Reduced invitation spam by \textbf{30\%} leveraging the member identity model.
+    \item Built end-to-end model training pipelines, handled feature engineering, and led model evaluation.
+    \item Trained and deployed classifiers to detect spam in short text fields such as user names and headlines.
+\end{itemize}
+
+\experienceentry{Shopzilla, Symphony}{Senior Data Scientist}{Jan 2012 -- Apr 2013}{BLR, India}
+\vspace{-5mm}
+\begin{itemize}
+    \item Forecasted Revenue Per Click for SEM keywords using big data technologies and statistical/machine-learning models.
+\end{itemize}
+
+\experienceentry{Innovation Labs, 24/7 Inc}{Senior Analytics Consultant}{Aug 2010 -- Jan 2012}{BLR, India}
+\vspace{-5mm}
+\begin{itemize}
+    \item Built and deployed machine learning models utilizing clickstream data to score visitor propensity to churn or purchase.
+\end{itemize}
+
+\end{minipage}
+\hspace{0.01\textwidth}
+% right column
+\begin{minipage}[t]{0.32\textwidth}
+
+\section{EDUCATION}
+\sayaneducationentry{2007 -- 2009}{Master of Statistics}{Indian Statistical Institute, Delhi}
+\sayaneducationentry{2004 -- 2007}{B.Sc. in Statistics (Honours)}{St. Xavier's College, Kolkata}
+
+\vspace{-3.0mm}
+{\section{Invited Talks}}
+\invitedtalk{2015}{Facebook Spam at Scale}{Presented research on detecting spam in short text.}
+\invitedtalk{2016}{Smart Data Summit, Dubai}{Discussed leveraging data science to prevent abuse on LinkedIn.}
+
+\vspace{-3.0mm}
+\section*{Achievements}
+\begin{itemize}
+    \achievement{Secured \textbf{All India Rank 15} in IIT JAM (Statistics) 2007.}
+    \achievement{Granted a patent for “Classification of members in a social networking service.” \textbf{Patent No: US10204307B1}.}
+    \achievement{Received the prestigious \textbf{Rajiv Sinha Technology Award} at Netscaler.}
+\end{itemize}
+
+\vspace{-3.0mm}
+\section*{Technical Skills}
+\begin{itemize}
+    \item \textbf{Programming Languages:} Python, R, SQL, Bash, \LaTeX
+    \item \textbf{Machine Learning:} scikit-learn, Prophet, XGBoost, Statsmodels
+    \item \textbf{Deep Learning:} PyTorch
+    \item \textbf{Generative AI:} 
+    \begin{itemize}
+        \item \textbf{LLM Frameworks:} LangChain, Autogen, FAISS, Qdrant
+        \item \textbf{Models \& APIs:} Azure OpenAI, Anthropic Claude
+    \end{itemize}
+    \item \textbf{Big Data:} Spark, Hadoop, Hive
+    \item \textbf{Cloud Platforms:} Azure, AWS
+\end{itemize}
+
+\vspace{-3.0mm}
+\section*{Selected Technical Writeups}
+\begin{itemize}
+    \item \href{https://sayan.github.io/dl-lecture-notes/neural_network_and_deep_learning/pytorch/06_pytorch_back_propagation_linear_layer.html}{\textcolor{blue}{\underline{Backpropagation in PyTorch}}}
+    \item \href{https://sayan.github.io/dl-lecture-notes/neural_network_and_deep_learning/logreg/logreg}{\textcolor{blue}{\underline{Logistic Regression}}}
+\end{itemize}
+
+\vspace{-3.0mm}
+\section*{References}
+Available upon request.
+
+\end{minipage}
+
+\end{document}
