@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1737966776.60244 "/workspaces/sayan_resume/sayan_cv_2025_moderncv/sayan_resume_Jan_2025.tex" "sayan_resume_Jan_2025.pdf" "sayan_resume_Jan_2025" 1737966778.08681 0
+["pdflatex"] 1738034930.72624 "/workspaces/sayan_resume/sayan_cv_2025_moderncv/sayan_resume_Jan_2025.tex" "sayan_resume_Jan_2025.pdf" "sayan_resume_Jan_2025" 1738034931.58975 0
   "/home/vscode/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1737966776.04986 68745 c13171fa5725e34d2debc04351cb5fbf ""
   "/home/vscode/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1734945559.89991 8771663 9e00976dfadb0203996cab01ef96c265 ""
   "/home/vscode/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc" 1737966775.74186 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
@@ -197,10 +197,10 @@
   "/home/vscode/.miktex/texmfs/install/tex/latex/tools/tabularx.sty" 1734945567.60791 7243 e5dac1240636811edb77568b81818372 ""
   "/home/vscode/.miktex/texmfs/install/tex/latex/url/url.sty" 1734945575.70391 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/home/vscode/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1734945568.02791 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "/workspaces/sayan_resume/sayan_cv_2025_moderncv/sayan_resume_Jan_2025.tex" 1737966746.67387 8503 f7142bfe0b86853578d3d36211ac8d01 ""
-  "sayan_resume_Jan_2025.aux" 1737966777.90186 1584 cc8652733a760450293030bc71a53699 "pdflatex"
-  "sayan_resume_Jan_2025.out" 1737966777.90186 1665 f9d6cb6b424f9b722777f1282cef1911 "pdflatex"
-  "sayan_resume_Jan_2025.tex" 1737966746.67387 8503 f7142bfe0b86853578d3d36211ac8d01 ""
+  "/workspaces/sayan_resume/sayan_cv_2025_moderncv/sayan_resume_Jan_2025.tex" 1738034930.19129 8575 a4168423b8cde10f8ecc9eadd422dbc4 ""
+  "sayan_resume_Jan_2025.aux" 1738034931.45929 1606 dce90ce93bca0aeabd710b1b845c6edb "pdflatex"
+  "sayan_resume_Jan_2025.out" 1738034931.45929 1784 9029a19f1ec7a5e55407e3aacd4a9ca9 "pdflatex"
+  "sayan_resume_Jan_2025.tex" 1738034930.19129 8575 a4168423b8cde10f8ecc9eadd422dbc4 ""
   (generated)
   "sayan_resume_Jan_2025.aux"
   "sayan_resume_Jan_2025.log"
